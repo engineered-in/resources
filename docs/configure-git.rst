@@ -4,7 +4,7 @@ Configure Git
 Git Bash is the ideal command line interface for configuring Git.
 
 You can also use command prompt or powershell if you have already 
-`configured user environment variable <https://engineered-in.pages.gitlab.com/resources/environment.html#user-environment-variable>`_
+`configured user environment variable <https://engineered-in.gitlab.io/resources/environment.html#user-environment-variable>`_
 
 Git needs to be configured for the following
 

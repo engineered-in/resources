@@ -60,7 +60,7 @@ Add your SSH Public key to GitLab
 ---------------------------------
 
 - Open Git-bash (or cmd if you have completed 
-  `Environment Setup <https://engineered-in.pages.gitlab.com/resources/environment.html#user-environment-variable>`_)
+  `Environment Setup <https://engineered-in.gitlab.io/resources/environment.html#user-environment-variable>`_)
 
 - Paste the below code into Git-bash (use **Copy button** instead of manual select)
   and press Enter key::
@@ -80,7 +80,7 @@ Add your GPG Public key to GitLab
 ---------------------------------
 
 - Open Git-bash (or cmd if you have completed 
-  `Environment Setup <https://engineered-in.pages.gitlab.com/resources/environment.html#user-environment-variable>`_)
+  `Environment Setup <https://engineered-in.gitlab.io/resources/environment.html#user-environment-variable>`_)
 
 - Paste the below code into Git-bash (use **Copy button** instead of manual select)
   and press Enter key::

@@ -32,7 +32,7 @@ pages:
     - public
   environment:
     name: Documentation
-    url: https://engineered-in.pages.gitlab.com/resources/
+    url: https://engineered-in.gitlab.io/resources/
   only:
   - main
   allow_failure: true

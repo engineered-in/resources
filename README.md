@@ -1,6 +1,6 @@
 # Resources
 
-[🚀 Python Development Environment Setup Guide](https://engineered-in.pages.gitlab.com/resources/)
+[🚀 Python Development Environment Setup Guide](https://engineered-in.gitlab.io/resources/)
 
 [🎓 Learn GitLab with tutorials](https://gitlab.com/help/tutorials/index.md)
 
