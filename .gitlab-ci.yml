@@ -21,11 +21,11 @@ pages:
     chmod +x versioner.sh
     bash versioner.sh
     sphinx-build -b html . ../public/
-    sphinx-build -b latex . _build/latex
-    cd _build/latex
-    latexmk -pdf -lualatex -interaction=nonstopmode -f
-    mv python-devenv-setup-guide.pdf ../../public/
-    cd ../..
+    # sphinx-build -b latex . _build/latex
+    # cd _build/latex
+    # latexmk -pdf -lualatex -interaction=nonstopmode -f
+    # mv python-devenv-setup-guide.pdf ../../public/
+    # cd ../..
   artifacts:
     expire_in: 300 seconds
     paths:
