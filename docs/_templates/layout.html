@@ -1,0 +1,6 @@
+{# docs/_templates/layout.html #}
+{% extends "!layout.html" %}
+
+{% block extra_nav_links %}
+  <a href="{{ pathto('/python-devenv-setup-guide.pdf', 1) }}" class="btn" target="_blank" download>Download as PDF</a>
+{% endblock %}

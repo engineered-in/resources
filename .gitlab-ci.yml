@@ -1,0 +1,38 @@
+image: python:latest
+
+stages:
+  - Documentation
+
+before_script:
+  - apt-get update
+  - apt-get install --no-install-recommends -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk tex-gyre
+  - apt-get clean
+  - rm -rf /var/lib/apt/lists/*  
+  - python -m venv resources-env
+  - source resources-env/bin/activate
+  - pip install sphinx sphinx_rtd_theme sphinx_copybutton toml
+
+pages:
+  stage: Documentation
+  script:
+  - |
+    echo "Generating Code Version"
+    cd docs
+    chmod +x versioner.sh
+    bash versioner.sh
+    sphinx-build -b html . ../public/
+    sphinx-build -b latex . _build/latex
+    cd _build/latex
+    latexmk -pdf -lualatex -interaction=nonstopmode -f
+    mv python-devenv-setup-guide.pdf ../../public/
+    cd ../..
+  artifacts:
+    expire_in: 300 seconds
+    paths:
+    - public
+  environment:
+    name: Documentation
+    url: https://engineered-in.pages.gitlab.com/resources/
+  only:
+  - main
+  allow_failure: true
